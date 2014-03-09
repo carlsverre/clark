@@ -4,7 +4,7 @@ from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
 # get version
-from memsql import __version__
+from superpy import __version__
 
 class PyTest(TestCommand):
     user_options = [
