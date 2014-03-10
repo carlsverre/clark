@@ -1,4 +1,4 @@
-from superpy import SuperEnum
+from clark import SuperEnum
 
 def test_basic():
     class Colors(SuperEnum):

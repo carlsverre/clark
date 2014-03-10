@@ -1,4 +1,4 @@
-from superpy import SuperPidfile
+from clark import SuperPidfile
 import os
 
 def test_basic():

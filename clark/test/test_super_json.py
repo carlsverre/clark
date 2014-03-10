@@ -1,4 +1,4 @@
-from superpy import super_json
+from clark import super_json
 import datetime
 
 def test_basic():

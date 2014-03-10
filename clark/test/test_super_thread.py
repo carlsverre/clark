@@ -1,4 +1,4 @@
-from superpy import SuperThread
+from clark import SuperThread
 import time
 
 def test_basic():

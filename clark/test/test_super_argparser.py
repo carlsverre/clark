@@ -1,4 +1,4 @@
-from superpy import SuperArgParser, ConfigFileAction
+from clark import SuperArgParser, ConfigFileAction
 
 def test_basic():
     parser = SuperArgParser()

@@ -1,12 +1,16 @@
-===========
-SuperPy
-===========
+=====
+Clark
+=====
+
+.. code:: bash
+
+    pip install clark
 
 Testing
 =======
 
-.. image:: https://travis-ci.org/carlsverre/superpy.png
-    :target: https://travis-ci.org/carlsverre/superpy
+.. image:: https://travis-ci.org/carlsverre/clark.png
+    :target: https://travis-ci.org/carlsverre/clark
 
 Run tests by executing :code:`python setup.py test`.
 
@@ -28,7 +32,7 @@ Your app:
 
 .. code:: python
 
-    from superpy import SuperArgParser, ConfigFileAction
+    from clark import SuperArgParser, ConfigFileAction
 
     parser = SuperArgParser()
 
@@ -52,7 +56,7 @@ A simple Enum class with lots of nice properties.
 
 .. code:: python
 
-    from superpy import SuperEnum
+    from clark import SuperEnum
 
     class Colors(SuperEnum):
         red = SuperEnum.E
@@ -85,7 +89,7 @@ Make simplejson slightly better (don't crash on datetime objects)
 
 .. code:: python
 
-    from superpy import super_json
+    from clark import super_json
     
     now = datetime.datetime.now()
     x = super_json.loads(super_json.dumps({ 'a': now }))
@@ -97,7 +101,7 @@ A simple PidFile class.  Instantiate when you boot up, and close it when you exi
 
 .. code:: python
 
-    from superpy import SuperPidFile
+    from clark import SuperPidFile
     
     pidfile = SuperPidFile()
     try:
@@ -111,7 +115,7 @@ Threads that terminate nicely and are awesome.
 
 .. code:: python
 
-    from superpy import SuperThread
+    from clark import SuperThread
     
     class T(SuperThread):
         def bootstrap(self):

@@ -4,7 +4,7 @@ from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
 # get version
-from superpy import __version__
+from clark import __version__
 
 class PyTest(TestCommand):
     user_options = [
@@ -47,7 +47,7 @@ class PyTest(TestCommand):
         if self.scan is not None:
             self.test_args.append(self.scan)
         else:
-            self.test_args.append('superpy')
+            self.test_args.append('clark')
 
     def run_tests(self):
         import os, sys, glob
@@ -64,11 +64,11 @@ class PyTest(TestCommand):
         raise sys.exit(errno)
 
 setup(
-    name='superpy',
+    name='clark',
     version=__version__,
     author='Carl Sverre',
     author_email='accounts@carlsverre.com',
-    url='http://github.com/carlsverre/superpy',
+    url='http://github.com/carlsverre/clark',
     license='LICENSE.txt',
     description='Utility library.',
     long_description=open('README.rst').read(),
@@ -77,7 +77,7 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     packages=[
-        'superpy',
+        'clark',
     ],
     zip_safe=False,
     install_requires=['simplejson', 'wraptor', 'argparse'],
